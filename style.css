@@ -1,0 +1,131 @@
+
+
+body{ 
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#F1F3E0;
+    color:#778873;
+}
+
+.page{ 
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer" ;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{ 
+    grid-area:header;
+}
+
+
+.header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px; 
+    background-color:#D2DCB6;
+    color: #778873; 
+}
+
+.logo{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+
+    
+}
+
+.sidebar{ 
+   grid-area: sidebar;
+}
+
+.sidebar{
+  font-family: 'Times New Roman', Times, serif;
+   padding: 24px;
+   background-color: #D2DCB6;
+   border-right: 1px solid white;
+   border-radius: 20px;
+   margin-top: 20px;
+}
+
+.sidebar h2{ 
+    text-align: center;
+    align-items: center;
+}
+
+.sidebar p{ 
+    margin-top: 80px;
+   
+  
+}
+
+.main{ 
+    grid-area: main;
+}
+
+.main{ 
+    margin-top: 20px;
+    margin-bottom:40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main h1{ 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+     
+}
+
+.navbar{ 
+    display: flex;
+    gap: 18px ;
+}
+
+.navbar a{ 
+    font-family: 'Times New Roman', Times, serif;
+    color: #313E17;
+    margin-top: 20px;
+    margin-left: 250px;
+    
+}
+.footer{ 
+    grid-area: footer;
+    padding: 16px;
+    text-align: center;
+    background-color: #FFF8EC;
+    color: #546B41
+}
+.card-grid{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card{ 
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 120px;
+    padding: 20px;
+    background-color: #FFF8EC;
+    border: 1px solid darkolivegreen;
+    border-radius: 10px;
+    box-shadow: 0  2px 6px rgba (0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card:hover{ 
+    background-color: #546B41;
+    transform: 0.3s;
+}
+
+
+
